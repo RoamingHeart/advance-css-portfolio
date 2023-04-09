@@ -2,23 +2,115 @@
 <html lang="en-us">
 
 <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Franklin's Portfolio Website</title>
 </head>
 
 <body>
+    <!-- Header -->
     <header>
-
+        <div class="logo">
+            <img src="./assets/images/logo.png" alt="Logo of a Rook chess piece">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="layers"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">About Me</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#projects" class="nav__link">My Projects</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">Contact Me</a>
+                </li>
+                
+            </ul>
+        </nav>
     </header>
 
-    <main>
+    <!-- Intro -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Franklin Li</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Fullstack Developer</p>
+        <img src="./assets/images/babel.jpg" alt="Tower of Babel" class="intro__img">
+    </section>
 
-    </main>
+     <!-- About Me -->
+     <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I Am</h2>
+        <p class="section__subtitle section__subtitle--about">Web Developer Based in the United States</p>
+        <div class="about-me__body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
 
-    <footer>
+        <img src="./assets/images/obelisk.jpg" alt="An image of an obelisk" class="about-me__img">
+    </section>
+
+    <!-- My Projects -->
+    <section class="my-projects" id="projects">
+        <h2 class="section__title section__title--projects">My Recent Projects</h2>
+        <p class="section__subtitle--projects">A sample of what I have done</p>
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="https://www.w3schools.com/js/default.asp" class="portfolio__item"><img src="./assets/images/js-pic.png" alt="JaveScript Logo" class="portfolio__img"></a>
+
+                <!-- Portfolio item 02 -->
+                <a href="https://www.w3schools.com/css/default.asp" class="portfolio__item"><img src="./assets/images/css-pic.jpg" alt="CSS Logo" class="portfolio__img"></a>
+
+                <!-- Portfolio item 03 -->
+                <a href="https://roamingheart.github.io/horiseon-website/" class="portfolio__item"><img src="./assets/images/horiseon-example.jpg" alt="An example image of the Horiseon Website" class="portfolio__img"></a>
+            </div>
         
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- email -->
+        <div id="contact">
+            <a href="email@email.com" class="footer__link">gmail@bing.com</a>
+            <!-- Social media links -->
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.facebook.com/DonaldTrump/">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com/elonmusk">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.instagram.com/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/pboling">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+       
     </footer>
+
+    <script src="./assets/index.js"></script>
+
 </body>
 
 </html>
