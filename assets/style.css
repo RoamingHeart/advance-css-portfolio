@@ -28,7 +28,7 @@
 
 @media (min-width: 800px) {
     :root {
-        --fs-h1: 4.5;
+        --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
         --fs-h3: 1.5rem;
         --fs-body: 1.125rem;
@@ -244,7 +244,7 @@ header {
         display: grid;
         width: min-content;
         margin: 0 auto;
-        grid-column-gap: 1em;
+        column-gap: 1em;
         grid-template-areas: 
             "img title"
             "img subtitle";
