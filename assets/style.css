@@ -321,18 +321,26 @@ header {
 .portfolio {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: start;
+    margin: 0 auto;
+    width: 600px;
 }
 
 .portfolio__item {
-    margin-top: 8px;
+    /* margin-top: 8px; */
     vertical-align: middle;
-    background: var(--clr-light);
+    /* background: var(--clr-light); */
     overflow: hidden;
 }
 
 .portfolio__img {
     transition: transform 750ms cubic-bezier(.5, 0, .5, 1),
     opacity 250ms linear;
+}
+
+#newest-project {
+    grid-row: 1 / span 2;
 }
 
 .portfolio__item:focus {
